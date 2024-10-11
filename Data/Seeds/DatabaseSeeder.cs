@@ -18,7 +18,7 @@ public class DatabaseSeeder : IDatabaseSeeder
     {
         var roleManager = serviceProvider.GetRequiredService<RoleManager<Role>>();
 
-        string[] roles = [Constants.AdminEmail, Constants.UserRoleName];
+        string[] roles = [Constants.AdminRoleName, Constants.UserRoleName];
 
         foreach (var role in roles)
         {
@@ -48,7 +48,7 @@ public class DatabaseSeeder : IDatabaseSeeder
             var result = await userManager.CreateAsync(adminUser, adminPassword);
             if (result.Succeeded)
             {
-                await userManager.AddToRoleAsync(adminUser, "Admin");
+                await userManager.AddToRoleAsync(adminUser, Constants.AdminRoleName);
             }
         }
     }
