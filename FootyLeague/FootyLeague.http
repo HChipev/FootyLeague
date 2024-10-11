@@ -1,0 +1,6 @@
+@FootyLeague_HostAddress = http://localhost:5285
+
+GET {{FootyLeague_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
