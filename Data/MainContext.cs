@@ -1,5 +1,5 @@
 using Data.Models;
-using FootyLeague.Data.Models.Abstractions;
+using Data.Models.Abstractions;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,8 +10,6 @@ public class MainContext(DbContextOptions<MainContext> options) : IdentityDbCont
     public DbSet<Team> Teams { get; set; }
 
     public DbSet<Match> Matches { get; set; }
-
-    public DbSet<Setting> Settings { get; set; }
 
     public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {

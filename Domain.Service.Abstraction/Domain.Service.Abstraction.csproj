@@ -8,7 +8,7 @@
 
     <ItemGroup>
         <ProjectReference Include="..\Data.Models\Data.Models.csproj"/>
-        <ProjectReference Include="..\ViewModels\ViewModels.csproj"/>
+        <ProjectReference Include="..\Api.ViewModels\Api.ViewModels.csproj"/>
     </ItemGroup>
 
     <ItemGroup>

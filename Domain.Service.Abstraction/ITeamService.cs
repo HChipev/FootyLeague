@@ -1,5 +1,5 @@
-﻿using Data.Models;
-using ViewModels.Team;
+﻿using Api.ViewModels.Team;
+using Data.Models;
 
 namespace Domain.Service.Abstraction;
 

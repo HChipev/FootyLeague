@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootyLeague", "FootyLeague\FootyLeague.csproj", "{513BE4D1-417C-4EEF-A4A3-277DD1419B7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{513BE4D1-417C-4EEF-A4A3-277DD1419B7B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{3F6E016A-3016-434F-BC5A-057F12B8064A}"
 EndProject
@@ -10,7 +10,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Models", "Data.Models\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Common", "Data.Common\Data.Common.csproj", "{E0E3645B-313E-46A9-9140-96DCFA231FEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{50C74B51-93E0-46BC-B71C-41432D576D15}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Infrastructure", "Api.Infrastructure\Api.Infrastructure.csproj", "{50C74B51-93E0-46BC-B71C-41432D576D15}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceProjects", "ServiceProjects", "{9C3EA200-7717-4B87-9916-D122022764D8}"
 EndProject
@@ -18,11 +18,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Service", "Domain.Se
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Service.Abstraction", "Domain.Service.Abstraction\Domain.Service.Abstraction.csproj", "{F54DE61E-7511-44B8-86F0-336A0440A194}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModels", "ViewModels\ViewModels.csproj", "{084E2E73-E3EF-438B-9998-9143E4E560E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.ViewModels", "Api.ViewModels\Api.ViewModels.csproj", "{084E2E73-E3EF-438B-9998-9143E4E560E3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Repository", "Data.Repository\Data.Repository.csproj", "{4CD65571-DD26-4492-8CBD-65565C2110AD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Repository.Abstraction", "Data.Repository.Abstraction\Data.Repository.Abstraction.csproj", "{47116CD0-2023-4ED7-B20D-87E84973C242}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiProjects", "ApiProjects", "{1B63ED4A-6311-41D7-AFA5-ABC4E678903B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestProjects", "TestProjects", "{8DC6A682-765A-44D8-8D5C-24A0F7CBE608}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Service", "Test.Service\Test.Service.csproj", "{F05200BC-799F-451A-8123-4C433DC398B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -70,6 +76,10 @@ Global
 		{47116CD0-2023-4ED7-B20D-87E84973C242}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47116CD0-2023-4ED7-B20D-87E84973C242}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47116CD0-2023-4ED7-B20D-87E84973C242}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F05200BC-799F-451A-8123-4C433DC398B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F05200BC-799F-451A-8123-4C433DC398B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F05200BC-799F-451A-8123-4C433DC398B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F05200BC-799F-451A-8123-4C433DC398B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3F6E016A-3016-434F-BC5A-057F12B8064A} = {2B0F0D5B-520C-4318-959B-7E4160CBB107}
@@ -79,5 +89,9 @@ Global
 		{F54DE61E-7511-44B8-86F0-336A0440A194} = {9C3EA200-7717-4B87-9916-D122022764D8}
 		{4CD65571-DD26-4492-8CBD-65565C2110AD} = {2B0F0D5B-520C-4318-959B-7E4160CBB107}
 		{47116CD0-2023-4ED7-B20D-87E84973C242} = {2B0F0D5B-520C-4318-959B-7E4160CBB107}
+		{513BE4D1-417C-4EEF-A4A3-277DD1419B7B} = {1B63ED4A-6311-41D7-AFA5-ABC4E678903B}
+		{50C74B51-93E0-46BC-B71C-41432D576D15} = {1B63ED4A-6311-41D7-AFA5-ABC4E678903B}
+		{084E2E73-E3EF-438B-9998-9143E4E560E3} = {1B63ED4A-6311-41D7-AFA5-ABC4E678903B}
+		{F05200BC-799F-451A-8123-4C433DC398B1} = {8DC6A682-765A-44D8-8D5C-24A0F7CBE608}
 	EndGlobalSection
 EndGlobal

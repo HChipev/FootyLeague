@@ -1,4 +1,4 @@
-﻿using FootyLeague.Data.Models.Abstractions;
+﻿using Data.Models.Abstractions;
 using Microsoft.AspNetCore.Identity;
 
 namespace Data.Models;

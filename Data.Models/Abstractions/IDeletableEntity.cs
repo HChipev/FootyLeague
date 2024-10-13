@@ -1,4 +1,4 @@
-namespace FootyLeague.Data.Models.Abstractions;
+namespace Data.Models.Abstractions;
 
 public interface IDeletableEntity
 {

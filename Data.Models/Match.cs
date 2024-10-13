@@ -1,6 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Data.Models.Abstractions;
-using FootyLeague.Data.Models.Abstractions;
 
 namespace Data.Models;
 

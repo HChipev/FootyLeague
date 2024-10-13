@@ -1,8 +1,8 @@
-﻿using Data.Models;
+﻿using Api.ViewModels.Team;
+using Data.Models;
 using Data.Repository.Abstraction;
 using Domain.Service.Abstraction;
 using Microsoft.EntityFrameworkCore;
-using ViewModels.Team;
 
 namespace Services;
 
@@ -80,10 +80,12 @@ public class TeamService : ITeamService
 
     public async Task<IEnumerable<Team>> GetAllTeamsAsync()
     {
-        IQueryable<Team> query =
-            _teamRepository.GetAllTeamsAsync().OrderBy(x => x.Points);
+        var teams = await
+            _teamRepository.GetAllTeamsAsync().ToListAsync();
 
-        return await query.ToListAsync();
+        teams.Sort((x, y) => y.Points - x.Points);
+
+        return teams;
     }
 
     public async Task<Team> GetTeamAsync(int id)

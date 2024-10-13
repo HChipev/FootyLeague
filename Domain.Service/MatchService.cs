@@ -1,8 +1,8 @@
-﻿using Data.Models;
+﻿using Api.ViewModels.Match;
+using Data.Models;
 using Data.Repository.Abstraction;
 using Domain.Service.Abstraction;
 using Microsoft.EntityFrameworkCore;
-using ViewModels.Match;
 
 namespace Services;
 

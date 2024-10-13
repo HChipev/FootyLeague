@@ -1,5 +1,5 @@
-﻿using Data.Models;
-using ViewModels.Match;
+﻿using Api.ViewModels.Match;
+using Data.Models;
 
 namespace Domain.Service.Abstraction;
 

@@ -1,8 +1,8 @@
-﻿using Data.Models;
+﻿using Api.ViewModels.Administration.Users;
+using Data.Models;
 using Domain.Service.Abstraction;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using ViewModels.Administration.Users;
 
 namespace Services;
 
